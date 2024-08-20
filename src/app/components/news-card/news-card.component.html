@@ -1,0 +1,9 @@
+<mat-card class="news-card" (click)="onCardClick()">
+    <img mat-card-image [src]="article.urlToImage" alt="Image not available">
+    <mat-card-title>{{ article.title }}</mat-card-title>
+    <mat-card-subtitle>{{ article.author }}</mat-card-subtitle>
+    <p><strong>Published on:</strong> {{ article.publishedAt | date: 'fullDate' }}</p>
+    <mat-card-content>
+        <p>{{ article.description }}</p>
+    </mat-card-content>
+</mat-card>

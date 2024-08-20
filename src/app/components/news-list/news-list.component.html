@@ -1,0 +1,7 @@
+<div class="container">
+    <app-search (searchEvent)="onSearch($event)"></app-search>
+    <app-filter (filterEvent)="fetchNews($event)"></app-filter>
+    <div class="news-list">
+        <app-news-card *ngFor="let article of articles" [article]="article"></app-news-card>
+    </div>
+</div>

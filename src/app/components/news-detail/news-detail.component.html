@@ -1,0 +1,10 @@
+<mat-card class="news-detail-card">
+    <img mat-card-image [src]="article?.urlToImage" alt="Article image">
+    <mat-card-content>
+        <h1>{{ article?.title }}</h1>
+        <mat-divider></mat-divider>
+        <p><strong>By:</strong> {{ article?.author }}</p>
+        <p>{{ article?.description }}</p>
+        <a mat-button color="primary" [href]="article?.url" target="_blank">Read full article</a>
+    </mat-card-content>
+</mat-card>
